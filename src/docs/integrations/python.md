@@ -39,7 +39,7 @@ Attempting to download the repo while the `SkyblockRepo` directory already exist
 ```python
 try:
   download_repo()
-except e:
+except Exception as e:
   print(f'Failed to download repo: {e}')
 ```
 
@@ -48,7 +48,7 @@ except e:
 ```python
 try:
   delete_repo()
-except e:
+except Exception as e:
   print(f'Failed to delete repo: {e}')
 ```
 
@@ -59,7 +59,7 @@ First, you need to initialize the SkyblockRepo data.
 ```python
 try:
   repo = SkyblockRepo()
-except e:
+except Exception as e:
   print(f'Failed to initialize repo: {e}')
 ```
 
