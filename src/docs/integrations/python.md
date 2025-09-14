@@ -11,7 +11,7 @@ tags:
 published: true
 ---
 
-A [PyPi package](https://pypi.org/manage/project/skyblock-repo) is available to use to easily interact with the raw data from the [Skyblock Repo]
+A [PyPi package](https://pypi.org/manage/project/skyblock-repo) is available to use to easily interact with the raw data from the [Skyblock Repo].
 
 If you need extra help, make an issue on the [GitHub repository].
 
@@ -34,6 +34,7 @@ The library provides **very simple** methods to retrieve the data for specific i
 Attempting to download the repo while the `SkyblockRepo` directory already exists will return prematurely.
 
 `delete_zip` param determines whether or not to delete the zip download and only keep the extracted files, it is `True` by default.
+`commit` param is used to specify a [Skyblock Repo] commit if you need to, it is `main` by default which is the latest commit.
 
 ```python
 try:

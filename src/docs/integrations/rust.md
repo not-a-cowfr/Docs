@@ -11,7 +11,7 @@ tags:
 published: true
 ---
 
-A [Cargo package](https://crates.io/crates/skyblock-repo) is available to use to easily interact with the raw data from the [Skyblock Repo]
+A [Cargo package](https://crates.io/crates/skyblock-repo) is available to use to easily interact with the raw data from the [Skyblock Repo].
 
 If you need extra help, make an issue on the [GitHub repository].
 
@@ -34,9 +34,10 @@ The library provides **very simple** methods to retrieve the data for specific i
 Attempting to download the repo while the `SkyblockRepo` directory already exists will return `Ok(())` prematurely. Additionally, if the `log` feature is enabled, print a warning to the stdout.
 
 `delete_zip` param determines whether or not to delete the zip download and only keep the extracted files.
+`commit` param is used to specify a [Skyblock Repo] commit if you need to, if `None` it defaults to `main` which is the latest commit.
 
 ```rust
-download_repo(true)?;
+download_repo(true, None)?;
 ```
 
 `delete_repo` deletes the `SkyblockRepo` directory and `SkyblockRepo-main.zip` if they exist.
